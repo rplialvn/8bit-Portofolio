@@ -29,8 +29,8 @@ export interface CvEntry {
 }
 
 export const HERO_PROFILE = {
-  name: 'ALEX MERCER',
-  handle: '@PLAYER_ONE_DEV',
+  name: 'Alvian',
+  handle: '@rplialvn',
   classTitle: 'Full-Stack Software Engineer',
   level: 27,
   location: 'World 1-1 / Jakarta, ID (Remote Ready)',
@@ -41,8 +41,8 @@ export const HERO_PROFILE = {
     "Greetings, traveler! I'm a full-stack software developer obsessed with clean architecture, responsive interfaces, and shipping products that feel genuinely fun to use.",
     'Over the past 5+ years, I have leveled up across modern TypeScript ecosystems, distributed backend services, and design-engineered frontends—turning complex business bosses into smooth user journeys.',
   ],
-  email: 'alex.mercer@overworld.dev',
-  github: 'https://github.com/yourusername',
+  email: 'raplialvian@gmail.com',
+  github: 'https://github.com/rplialvn',
   linkedin: 'https://linkedin.com/in/yourusername',
   website: 'https://overworld.dev',
   attributes: [
@@ -204,9 +204,9 @@ export const QUEST_PROJECTS: QuestProject[] = [
 export const CV_TIMELINE: CvEntry[] = [
   {
     period: '2023 - PRESENT',
-    role: 'Senior Full-Stack Engineer',
+    role: 'Junior Full-Stack Engineer',
     guild: 'Starlight Labs Inc.',
-    location: 'Remote / Singapore',
+    location: 'Remote / Indonesia',
     type: 'WORK',
     achievements: [
       'Architected a modular React + TypeScript design system adopted across 6 core SaaS products, cutting UI delivery time by 38%.',
@@ -238,10 +238,10 @@ export const CV_TIMELINE: CvEntry[] = [
     ],
   },
   {
-    period: '2015 - 2019',
+    period: '2023 - Present',
     role: 'B.Sc. in Computer Science',
-    guild: 'Institute of Technology Academy',
-    location: 'GPA 3.86 / 4.00 (Cum Laude)',
+    guild: 'University Bina Sarana Informatika',
+    location: 'GPA 3.72 / 4.00',
     type: 'EDUCATION',
     achievements: [
       'Lead Programmer at Campus Game & Web Dev Guild; won 1st Place in National 48-Hour Hackathon.',
