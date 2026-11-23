@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-pixel: 'Press Start 2P', monospace;
+  --font-retro: 'VT323', monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'VT323', monospace;
+    background-color: #5c94fc;
+    color: #181425;
+    overflow-x: hidden;
+    image-rendering: pixelated;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Press Start 2P', monospace;
+    line-height: 1.5;
+  }
+}
+
+@keyframes floatCloud {
+  0% {
+    transform: translateX(-140px);
+  }
+  100% {
+    transform: translateX(calc(100vw + 140px));
+  }
+}
+
+@keyframes bobCoin {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes blinkCursor {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes walkBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-cloud-slow {
+  animation: floatCloud 54s linear infinite;
+}
+
+.animate-cloud-mid {
+  animation: floatCloud 38s linear infinite;
+}
+
+.animate-coin {
+  animation: bobCoin 1.4s steps(2, end) infinite;
+}
+
+.animate-cursor {
+  animation: blinkCursor 1s steps(1, end) infinite;
+}
+
+.animate-hero-idle {
+  animation: walkBounce 0.9s steps(2, end) infinite;
+}
+
+/* Crisp 8-bit frame shadows */
+.pixel-card {
+  background-color: #fffdf5;
+  border: 4px solid #181425;
+  box-shadow:
+    inset -4px -4px 0px #dfd6be,
+    inset 4px 4px 0px #ffffff,
+    6px 6px 0px #181425;
+}
+
+.pixel-card-gold {
+  background-color: #fcd856;
+  border: 4px solid #181425;
+  box-shadow:
+    inset -4px -4px 0px #d99326,
+    inset 4px 4px 0px #fff29c,
+    6px 6px 0px #181425;
+}
+
+.pixel-card-blue {
+  background-color: #2038ec;
+  color: #ffffff;
+  border: 4px solid #181425;
+  box-shadow:
+    inset -4px -4px 0px #121f8a,
+    inset 4px 4px 0px #5c7aff,
+    6px 6px 0px #181425;
+}
+
+.pixel-card-brick {
+  background-color: #c84c0c;
+  color: #ffffff;
+  border: 4px solid #181425;
+  box-shadow:
+    inset -4px -4px 0px #7d2c04,
+    inset 4px 4px 0px #f57d3d,
+    6px 6px 0px #181425;
+}
+
+.pixel-btn {
+  font-family: 'Press Start 2P', monospace;
+  border: 4px solid #181425;
+  box-shadow:
+    inset -4px -4px 0px rgba(0, 0, 0, 0.25),
+    inset 4px 4px 0px rgba(255, 255, 255, 0.45),
+    4px 4px 0px #181425;
+  transition: transform 75ms steps(2, end), box-shadow 75ms steps(2, end);
+  cursor: pointer;
+}
+
+.pixel-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow:
+    inset -4px -4px 0px rgba(0, 0, 0, 0.25),
+    inset 4px 4px 0px rgba(255, 255, 255, 0.55),
+    5px 5px 0px #181425;
+}
+
+.pixel-btn:active {
+  transform: translate(3px, 3px);
+  box-shadow:
+    inset -2px -2px 0px rgba(0, 0, 0, 0.25),
+    1px 1px 0px #181425;
+}
+
+.pixel-input {
+  background-color: #ffffff;
+  border: 4px solid #181425;
+  box-shadow: inset 4px 4px 0px #d8d0bc;
+  font-family: 'VT323', monospace;
+  font-size: 1.35rem;
+}
+
+.pixel-input:focus {
+  outline: none;
+  background-color: #fffbe6;
+  border-color: #2038ec;
+}
+
+/* 8-bit grass & brick repeating patterns */
+.overworld-grass {
+  background-color: #00a800;
+  background-image:
+    linear-gradient(90deg, #80d010 25%, transparent 25%),
+    linear-gradient(90deg, transparent 75%, #007800 75%);
+  background-size: 24px 16px;
+  border-top: 4px solid #181425;
+  border-bottom: 4px solid #181425;
+}
+
+.overworld-dirt {
+  background-color: #c84c0c;
+  background-image:
+    radial-gradient(#fc9838 18%, transparent 19%),
+    radial-gradient(#7d2c04 18%, transparent 19%);
+  background-position: 0 0, 16px 16px;
+  background-size: 32px 32px;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+  }
+}

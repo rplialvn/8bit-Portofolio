@@ -1,0 +1,11 @@
+{
+  "title": "Alvian | 8-Bit Portfolio",
+  "description": "A pixel-art portfolio template for creatives to showcase their work, skills, CV, and contact details in a playful 8-bit style.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
