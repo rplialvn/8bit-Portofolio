@@ -9,7 +9,7 @@ export function PixelAvatar({ className = 'w-40 h-40' }: { className?: string })
       aria-label="8-bit Software Developer Avatar"
     >
       {/* Hair & Red Cap */}
-      <rect x="4" y="1" width="8" height="2" fill="#E40058" />
+      <rect x="4" y="1" width="8" height="2" fill="#" />
       <rect x="3" y="2" width="11" height="1" fill="#E40058" />
       <rect x="5" y="1" width="2" height="1" fill="#FFFFFF" />
       {/* Hair sides */}
@@ -23,8 +23,8 @@ export function PixelAvatar({ className = 'w-40 h-40' }: { className?: string })
       <rect x="4" y="4" width="8" height="1" fill="#181425" />
       <rect x="5" y="5" width="2" height="2" fill="#181425" />
       <rect x="9" y="5" width="2" height="2" fill="#181425" />
-      <rect x="6" y="5" width="1" height="1" fill="#5C94FC" />
-      <rect x="10" y="5" width="1" height="1" fill="#5C94FC" />
+      <rect x="6" y="5" width="1" height="1" fill="#FFFFFF" />
+      <rect x="10" y="5" width="1" height="1" fill="#FFFFFF" />
       {/* Smile */}
       <rect x="7" y="7" width="2" height="1" fill="#181425" />
       {/* Headphones */}
@@ -35,7 +35,7 @@ export function PixelAvatar({ className = 'w-40 h-40' }: { className?: string })
       <rect x="3" y="9" width="1" height="3" fill="#2038EC" />
       <rect x="12" y="9" width="1" height="3" fill="#2038EC" />
       {/* Hoodie Accent / Gold Badge */}
-      <rect x="7" y="9" width="2" height="2" fill="#FCD856" />
+      <rect x="7" y="9" width="2" height="2" fill="#E40058" />
       {/* Hands */}
       <rect x="3" y="12" width="1" height="1" fill="#FCA044" />
       <rect x="12" y="12" width="1" height="1" fill="#FCA044" />

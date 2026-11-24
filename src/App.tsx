@@ -33,7 +33,7 @@ const NAV_ITEMS: { id: NavSection; label: string; world: string }[] = [
 ];
 
 export default function App() {
-  const [coins, setCoins] = useState<number>(22);
+  const [coins, setCoins] = useState<number>(28);
   const [blockHits, setBlockHits] = useState<number>(0);
   const [sfxOn, setSfxOn] = useState<boolean>(true);
   const [activeNav, setActiveNav] = useState<NavSection>('home');
@@ -365,12 +365,12 @@ export default function App() {
                 {/* Character Quick Stats */}
                 <div className="mt-4 grid grid-cols-3 gap-2 text-center">
                   <div className="bg-[#121F8A] border-2 border-white p-2">
-                    <div className="font-pixel text-xs text-[#FCD856]">3 YRS</div>
+                    <div className="font-pixel text-xs text-[#FCD856]">5+ YRS</div>
                     <div className="text-lg text-white">CODING</div>
                   </div>
                   <div className="bg-[#121F8A] border-2 border-white p-2">
-                    <div className="font-pixel text-xs text-[#00E436]">100%</div>
-                    <div className="text-lg text-white">PASSION</div>
+                    <div className="font-pixel text-xs text-[#00E436]">30+</div>
+                    <div className="text-lg text-white">SHIPPED</div>
                   </div>
                   <div className="bg-[#121F8A] border-2 border-white p-2">
                     <div className="font-pixel text-xs text-[#FF77A8]">99.9%</div>
@@ -1071,11 +1071,24 @@ export default function App() {
 
         {/* Brick/Dirt Underground Footer */}
         <div className="overworld-dirt py-10 px-4 text-white border-b-8 border-[#181425]">
-          <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-6 ">
-             <button
+          <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 bg-[#181425] border-4 border-white p-6">
+            <div>
+              <div className="font-pixel text-xs text-[#FCD856] mb-1">
+                {HERO_PROFILE.name} • 8-BIT PORTFOLIO TEMPLATE
+              </div>
+              <p className="text-xl text-[#D6CFE2]">
+                Edit all profile text, skills, quests, and CV timeline easily inside{' '}
+                <code className="bg-[#2B2440] text-[#FCD856] px-1.5 py-0.5">
+                  src/data/portfolioData.ts
+                </code>
+              </p>
+            </div>
+
+            <button
               type="button"
               onClick={() => scrollToSection('home')}
-              className="pixel-btn bg-[#FCD856] text-[#181425] text-[18px] px-10 py-5 shrink-0">
+              className="pixel-btn bg-[#FCD856] text-[#181425] text-[10px] px-4 py-3 shrink-0"
+            >
               ▲ WARP TO TOP
             </button>
           </div>

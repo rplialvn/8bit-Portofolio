@@ -24,7 +24,7 @@ export interface CvEntry {
   role: string;
   guild: string;
   location: string;
-  type: 'WORK' | 'EDUCATION';
+  type: 'WORK' | 'EDUCATION' | 'INTERNSHIP' | 'FREELANCE';
   achievements: string[];
 }
 
@@ -36,7 +36,7 @@ export const HERO_PROFILE = {
   location: 'World 1-1 / Jakarta, ID (Remote Ready)',
   status: 'OPEN FOR NEW QUESTS',
   tagline:
-    'Crafting ultra-fast web apps, resilient APIs, and playful interactive experiences one pixel at a time.',
+    'Crafting responsive web apps and playful interactive experiences, one pixel at a time.',
   bioParagraphs: [
     "Greetings, traveler from the digital realm! I'm Alvian, a web developer and final-year student on a quest to craft engaging digital experiences.",
     'Grinding code since 2023, leveling up across the modern web ecosystem to build responsive interfaces, snappy web apps, and clean user experiences.',
@@ -44,7 +44,7 @@ export const HERO_PROFILE = {
   email: 'raplialvian@gmail.com',
   github: 'https://github.com/rplialvn',
   linkedin: 'https://linkedin.com/in/yourusername',
-  website: 'https://overworld.dev',
+  website: 'https://alviandev.web.id',
   attributes: [
     { label: 'CLEAN CODE', value: 94, color: '#00A800' },
     { label: 'SYSTEM DESIGN', value: 88, color: '#2038EC' },
@@ -54,8 +54,8 @@ export const HERO_PROFILE = {
   inventoryItems: [
     { slot: 'WEAPON', item: 'Mechanical Split Keyboard +7', bonus: '+25 WPM Speed' },
     { slot: 'SHIELD', item: 'Strict TypeScript Armor', bonus: '-90% Runtime Bugs' },
-    { slot: 'POTION', item: 'Double Espresso Elixir', bonus: '+100 Stamina' },
-    { slot: 'RELIC', item: 'Neovim & Tmux Scroll', bonus: '+40 Terminal Mastery' },
+    { slot: 'POTION', item: 'Double Espresso', bonus: '+100 Stamina' },
+    { slot: 'RELIC', item: 'Browser DevTools Scope', bonus: '+50 UI Debugging' },
   ],
 };
 
@@ -203,29 +203,29 @@ export const QUEST_PROJECTS: QuestProject[] = [
 
 export const CV_TIMELINE: CvEntry[] = [
   {
-    period: '2025 - 2026',
-    role: 'Front-End Software Engineer',
-    guild: 'Starlight Labs Inc.',
-    location: 'Remote / Indonesia',
-    type: 'WORK',
-    achievements: [
-      'Architected a modular React + TypeScript design system adopted across 6 core SaaS products, cutting UI delivery time by 38%.',
-      'Re-engineered Node.js & PostgreSQL reporting pipelines, dropping p95 query latency from 1.4s down to 140ms.',
-      'Mentored a party of 5 junior and mid-level developers through weekly architecture quests and code reviews.',
-    ],
-  },
-  {
     period: '2026',
-    role: 'Full-Stack Software Developer',
-    guild: 'Meeting-Notes',
-    location: 'Jakarta, ID',
-    type: 'WORK',
+    role: 'Full-Stack developer',
+    guild: 'PT.Nigmagrid Indo Nesia',
+    location: 'Jakarta / Indonesia',
+    type: 'INTERNSHIP',
     achievements: [
-  'Engineered a full-stack meeting minutes app with FastAPI (Python), SQLite, and React (Vite + Tailwind CSS).',
-  'Integrated offline Speech-to-Text using faster-whisper, enabling zero-cost local CPU transcription with segment-level audio sync.',
-  'Implemented in-browser audio recording via MediaRecorder API and automated report generation to official PDF and DOCX formats.',
-],
+    'Developed a full-stack internal Meeting Notes platform integrating React, FastAPI, and offline Whisper AI transcription for automated meeting minutes.',
+    'Performed functional QA testing and bug verification for the JakPro enterprise web application, ensuring release stability and UX compliance.',
+    'Collaborated in cross-functional team workflows, participating in code reviews, bug triage, and sprint deliverables.',
+  ],
   },
+//   {
+//     period: '2026',
+//     role: 'Full-Stack Software Developer',
+//     guild: 'Meeting-Notes',
+//     location: 'Jakarta, ID',
+//     type: 'WORK',
+//     achievements: [
+//   'Engineered a full-stack meeting minutes app with FastAPI (Python), SQLite, and React (Vite + Tailwind CSS).',
+//   'Integrated offline Speech-to-Text using faster-whisper, enabling zero-cost local CPU transcription with segment-level audio sync.',
+//   'Implemented in-browser audio recording via MediaRecorder API and automated report generation to official PDF and DOCX formats.',
+// ],
+//   },
   // {
   //   period: '2019 - 2021',
   //   role: 'Frontend Engineer',
