@@ -1,7 +1,7 @@
 export interface SkillItem {
   name: string;
   level: number; // 0 to 100
-  rank: 'MASTER' | 'EXPERT' | 'ADVANCED';
+  rank: 'BEGINNER' | 'INTERMEDIATE' | 'ADVANCED' | 'EXPERT' | 'MASTER';
   category: 'Frontend' | 'Backend' | 'DevOps & Tools';
   badgeColor: string;
 }
@@ -10,7 +10,7 @@ export interface QuestProject {
   id: string;
   questCode: string;
   title: string;
-  difficulty: 'S-RANK' | 'A-RANK' | 'B-RANK';
+  difficulty: 'S-RANK' | 'A-RANK' | 'B-RANK' | 'C-RANK';
   summary: string;
   techStack: string[];
   xpReward: number;
@@ -32,14 +32,14 @@ export const HERO_PROFILE = {
   name: 'Alvian',
   handle: '@rplialvn',
   classTitle: 'Full-Stack Software Engineer',
-  level: 27,
+  level: 22,
   location: 'World 1-1 / Jakarta, ID (Remote Ready)',
   status: 'OPEN FOR NEW QUESTS',
   tagline:
     'Crafting ultra-fast web apps, resilient APIs, and playful interactive experiences one pixel at a time.',
   bioParagraphs: [
-    "Greetings, traveler! I'm a full-stack software developer obsessed with clean architecture, responsive interfaces, and shipping products that feel genuinely fun to use.",
-    'Over the past 5+ years, I have leveled up across modern TypeScript ecosystems, distributed backend services, and design-engineered frontends—turning complex business bosses into smooth user journeys.',
+    "Greetings, traveler from the digital realm! I'm Alvian, a web developer and final-year student on a quest to craft engaging digital experiences.",
+    'Grinding code since 2023, leveling up across the modern web ecosystem to build responsive interfaces, snappy web apps, and clean user experiences.',
   ],
   email: 'raplialvian@gmail.com',
   github: 'https://github.com/rplialvn',

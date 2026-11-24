@@ -33,7 +33,7 @@ const NAV_ITEMS: { id: NavSection; label: string; world: string }[] = [
 ];
 
 export default function App() {
-  const [coins, setCoins] = useState<number>(28);
+  const [coins, setCoins] = useState<number>(22);
   const [blockHits, setBlockHits] = useState<number>(0);
   const [sfxOn, setSfxOn] = useState<boolean>(true);
   const [activeNav, setActiveNav] = useState<NavSection>('home');
@@ -365,12 +365,12 @@ export default function App() {
                 {/* Character Quick Stats */}
                 <div className="mt-4 grid grid-cols-3 gap-2 text-center">
                   <div className="bg-[#121F8A] border-2 border-white p-2">
-                    <div className="font-pixel text-xs text-[#FCD856]">5+ YRS</div>
+                    <div className="font-pixel text-xs text-[#FCD856]">3 YRS</div>
                     <div className="text-lg text-white">CODING</div>
                   </div>
                   <div className="bg-[#121F8A] border-2 border-white p-2">
-                    <div className="font-pixel text-xs text-[#00E436]">30+</div>
-                    <div className="text-lg text-white">SHIPPED</div>
+                    <div className="font-pixel text-xs text-[#00E436]">100%</div>
+                    <div className="text-lg text-white">PASSION</div>
                   </div>
                   <div className="bg-[#121F8A] border-2 border-white p-2">
                     <div className="font-pixel text-xs text-[#FF77A8]">99.9%</div>
