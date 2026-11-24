@@ -1071,24 +1071,11 @@ export default function App() {
 
         {/* Brick/Dirt Underground Footer */}
         <div className="overworld-dirt py-10 px-4 text-white border-b-8 border-[#181425]">
-          <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 bg-[#181425] border-4 border-white p-6">
-            <div>
-              <div className="font-pixel text-xs text-[#FCD856] mb-1">
-                {HERO_PROFILE.name} • 8-BIT PORTFOLIO TEMPLATE
-              </div>
-              <p className="text-xl text-[#D6CFE2]">
-                Edit all profile text, skills, quests, and CV timeline easily inside{' '}
-                <code className="bg-[#2B2440] text-[#FCD856] px-1.5 py-0.5">
-                  src/data/portfolioData.ts
-                </code>
-              </p>
-            </div>
-
-            <button
+          <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-6 ">
+             <button
               type="button"
               onClick={() => scrollToSection('home')}
-              className="pixel-btn bg-[#FCD856] text-[#181425] text-[10px] px-4 py-3 shrink-0"
-            >
+              className="pixel-btn bg-[#FCD856] text-[#181425] text-[18px] px-10 py-5 shrink-0">
               ▲ WARP TO TOP
             </button>
           </div>
